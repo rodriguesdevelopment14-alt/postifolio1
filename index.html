@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+   
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Estrelas Animadas -->
+
+  <div class="stars" id="stars"></div>
+  <!-- Botão Menu Mobile --> 
+   <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <!-- BOTÃO DE TEMA DIA/NOITE -->
+
+  <div class="theme-toggle" id="themeToggle" title="Alternar tema claro/escuro">
+   <div class="theme-toggle-circle">
+    🌙
+   </div>
+  </div>
+  <!-- Overlay para sidebar mobile -->
+
+  <div class="sidebar-overlay" id="sidebarOverlay">
+
+  </div>
+  <div class="container">
+
+    <!-- Sidebar -->
+
+   <nav class="sidebar" id="sidebar">
+    <div class="logo-container">
+        
+     <div class="logo-upload" id="logoUpload"><span id="logoText">R-dev</span>
+     </div>
+     <input type="file" id="logoInput" accept="image/*" style="display: none;">
+    </div>
+    <ul class="nav-menu">
+     <li class="nav-item">
+        <a href="#" class="nav-link active" data-section="home"> <span class="nav-icon">🏠</span> 
+            <span>Início</span> </a></li>
+     <li class="nav-item"><a href="#" class="nav-link" data-section="about"> <span class="nav-icon">👤</span> <span>Sobre</span> </a></li>
+
+     <li class="nav-item"><a href="#" class="nav-link" data-section="services"> <span class="nav-icon">⚡</span> <span>Serviços</span> </a></li>
+
+     <li class="nav-item"><a href="#" class="nav-link" data-section="portfolio"> <span class="nav-icon">💼</span> <span>Portfolio</span> </a></li>
+
+     <li class="nav-item"><a href="#" class="nav-link" data-section="contact"> <span class="nav-icon">📧</span> <span>Contato</span> </a></li>
+
+    </ul>
+   </nav>
+   <!-- Conteúdo Principal -->
+
+   <main class="main-content">
+    
+    <!-- Seção Inicial -->
+
+    <section class="section active" id="home">
+     <div class="hero">
+      <div class="hero-content">
+
+       <p class="hero-greeting">Olá, eu sou</p>
+
+       <h1 class="hero-name" id="developerName">Rodrigues Manjate</h1>
+
+       <div class="typing-container">
+        <p class="typing-text">Eu sou <span class="typing-word" id="typingWord"></span> <span class="cursor"></span></p>
+       </div>
+       <p class="hero-description">Transformo ideias em experiências digitais incríveis através de código limpo e design inovador.</p>
+
+       <div class="hero-buttons"><a href="#" class="btn-primary" data-section="portfolio"> <span>Ver Meu Trabalho</span> </a> <a href="#" class="btn-primary" data-section="contact"> <span>Fale Comigo</span> </a>
+       </div>
+       
+      </div>
+      <div class="hero-visual">
+       <div class="hero-avatar">
+        <img src="pic-3.jpg" alt="">
+       </div>
+      </div>
+
+     </div>
+
+    </section>
+    
+    <!-- Seção Sobre -->
+
+    <section class="section" id="about">
+     <div class="about-grid">
+      <div class="about-text">
+       <h2>Sobre Mim</h2>
+
+       <p class="about-description" id="aboutDescription">Sou um desenvolvedor web apaixonado por tecnologia e inovação. Com anos de experiência, especializo-me em criar soluções digitais que combinam funcionalidade excepcional com design atraente. Minha missão é transformar suas ideias em realidade digital.</p>
+
+       <div class="hero-buttons"><a href="#" class="btn-primary" data-section="contact"> <span>Vamos Trabalhar Juntos</span> </a>
+       </div>
+
+      </div>
+      
+      <div class="skills-container">
+       <h3 style="margin-bottom: 2rem; color: var(--primary-color);">Minhas Habilidades</h3>
+
+       <div class="skill-item"><span class="skill-name">HTML</span>
+        <div class="skill-bar">
+         <div class="skill-progress" data-skill="90"></div>
+        </div><span class="skill-percentage">90%</span>
+       </div>
+
+       <div class="skill-item"><span class="skill-name">CSS</span>
+        <div class="skill-bar">
+         <div class="skill-progress" data-skill="85"></div>
+        </div><span class="skill-percentage">85%</span>
+       </div>
+
+       <div class="skill-item"><span class="skill-name">JavaScript</span>
+        <div class="skill-bar">
+         <div class="skill-progress" data-skill="80"></div>
+        </div><span class="skill-percentage">80%</span>
+       </div>
+
+       
+       <div class="skill-item"><span class="skill-name">Bootstrap</span>
+        <div class="skill-bar">
+         <div class="skill-progress" data-skill="75"></div>
+        </div><span class="skill-percentage">75%</span>
+       </div>
+
+       <div class="skill-item"><span class="skill-name">React</span>
+        <div class="skill-bar">
+         <div class="skill-progress" data-skill="70"></div>
+        </div><span class="skill-percentage">70%</span>
+       </div>
+
+       <div class="skill-item"><span class="skill-name">IA/Machine Learning</span>
+        <div class="skill-bar">
+         <div class="skill-progress" data-skill="65"></div>
+        </div><span class="skill-percentage">65%</span>
+       </div>
+
+       
+
+      </div>
+      <div class="about-text">
+       <h2>Misao</h2>
+
+       <p class="about-description" id="aboutDescription">Sou um desenvolvedor web apaixonado por tecnologia e inovação. Com anos de experiência, realidade digital.</p>
+
+       <h2>Visao
+
+       </h2>
+
+       <p class="about-description" id="aboutDescription">Sou um desenvolvedor web apaixonado por tecnologia e inovação. Com anos de experiência, realidade digital.</p>
+
+
+      </div>
+
+      
+      
+     <div class="gallery-container">
+      <div class="gallery-grid">
+       <div class="gallery-item" onclick="openModal('modal1')">
+        <div class="gallery-image">
+         🌐
+        </div>
+
+        <div class="gallery-content">
+         <h3 class="gallery-title">Desenvolvimento Web</h3>
+         <p class="gallery-description">Sites responsivos e aplicações web modernas</p>
+        </div>
+
+       </div>
+       <div class="gallery-item" onclick="openModal('modal2')">
+        <div class="gallery-image">
+         🎨
+        </div>
+        <div class="gallery-content">
+         <h3 class="gallery-title">Design UI/UX</h3>
+         <p class="gallery-description">Interfaces intuitivas e experiências únicas</p>
+        </div>
+
+       </div>
+       
+      </div>
+     </div>
+
+     </div>
+
+     
+
+    </section>
+    <!-- Seção Serviços -->
+    <section class="section" id="services">
+
+     <div class="services-header">
+      <h2>Meus Serviços</h2>
+      <p>Confira alguns dos meus trabalhos e projetos realizados</p>
+     </div>
+
+
+     <div class="carousel-container"><!-- Cabeçalho do Carrossel -->
+   <div class="carousel-header">
+    <h1 class="carousel-title" id="carouselTitle">Meus Projetos Incríveis</h1>
+   </div><!-- Indicador de Autoplay -->
+   <div class="autoplay-indicator" id="autoplayIndicator">
+    <div class="autoplay-dot"></div><span>Auto</span>
+   </div><!-- Carrossel Principal -->
+   <div class="carousel">
+    <div class="carousel-track" id="carouselTrack"><!-- Slide 1 -->
+     <div class="carousel-slide">
+      <div class="slide-content"><span class="slide-icon">🌐</span>
+       <h2 class="slide-title" id="slide1Title">Projeto Web Moderno</h2>
+       <p class="slide-description" id="slide1Description">Site responsivo com design elegante e funcionalidades avançadas para uma experiência única do usuário.</p>
+      </div>
+     </div><!-- Slide 2 -->
+     <div class="carousel-slide">
+      <div class="slide-content"><span class="slide-icon">📱</span>
+       <h2 class="slide-title" id="slide2Title">App Mobile Inovador</h2>
+       <p class="slide-description" id="slide2Description">Aplicativo mobile com interface intuitiva e performance otimizada para iOS e Android.</p>
+      </div>
+     </div><!-- Slide 3 -->
+     <div class="carousel-slide">
+      <div class="slide-content"><span class="slide-icon">🎨</span>
+       <h2 class="slide-title" id="slide3Title">Design UI/UX Premium</h2>
+       <p class="slide-description" id="slide3Description">Interface moderna e funcional com foco na experiência do usuário e usabilidade excepcional.</p>
+      </div>
+     </div>
+    </div><!-- Barra de Progresso -->
+    <div class="progress-bar" id="progressBar"></div><!-- Controles de Navegação --> <button class="carousel-nav prev" id="prevBtn">‹</button> <button class="carousel-nav next" id="nextBtn">›</button>
+   </div><!-- Indicadores -->
+   <div class="carousel-indicators" id="indicators">
+    <div class="indicator active" data-slide="0"></div>
+    <div class="indicator" data-slide="1"></div>
+    <div class="indicator" data-slide="2"></div>
+   </div>
+  </div>
+
+     <div class="gallery-container">
+      <div class="gallery-grid">
+       <div class="gallery-item" onclick="openModal('modal1')">
+        <div class="gallery-image">
+         🌐
+        </div>
+
+        <div class="gallery-content">
+         <h3 class="gallery-title">Desenvolvimento Web</h3>
+         <p class="gallery-description">Sites responsivos e aplicações web modernas</p>
+        </div>
+
+       </div>
+       <div class="gallery-item" onclick="openModal('modal2')">
+        <div class="gallery-image">
+         🎨
+        </div>
+        <div class="gallery-content">
+         <h3 class="gallery-title">Design UI/UX</h3>
+         <p class="gallery-description">Interfaces intuitivas e experiências únicas</p>
+        </div>
+
+       </div>
+
+       <div class="gallery-item" onclick="openModal('modal3')">
+        <div class="gallery-image">
+         📱
+        </div>
+        <div class="gallery-content">
+         <h3 class="gallery-title">Apps Mobile</h3>
+         <p class="gallery-description">Aplicativos nativos e híbridos</p>
+        </div>
+
+       </div>
+
+       <div class="gallery-item" onclick="openModal('modal4')">
+        <div class="gallery-image">
+         🚀
+        </div>
+
+        <div class="gallery-content">
+         <h3 class="gallery-title">E-commerce</h3>
+         <p class="gallery-description">Lojas virtuais completas e otimizadas</p>
+        </div>
+
+       </div>
+      </div>
+     </div>
+
+    </section>
+    
+    <!-- Seção Portfolio -->
+
+    <section class="section" id="portfolio">
+     <div class="services-header">
+      <h2>Meu Portfolio</h2>
+
+      <p>Projetos que demonstram minha experiência e criatividade</p>
+     </div>
+
+     <div class="portfolio-tabs"><button class="tab-btn active" data-tab="all">Todos</button> <button class="tab-btn" data-tab="web">Web</button> <button class="tab-btn" data-tab="mobile">Mobile</button> <button class="tab-btn" data-tab="design">Design</button>
+     </div>
+
+     <div class="portfolio-grid" id="portfolioGrid">
+      <div class="portfolio-card" data-category="web">
+
+       <div class="portfolio-media">
+        🏪 
+        <div class="play-btn">
+         ▶
+        </div>
+       </div>
+
+       <div class="portfolio-info">
+        <h3 class="portfolio-title">Loja Virtual Premium</h3>
+        <div class="portfolio-tech"><span class="tech-tag">React</span> <span class="tech-tag">Node.js</span> <span class="tech-tag">MongoDB</span>
+        </div>
+        <p>E-commerce completo com sistema de pagamento integrado</p>
+       </div>
+
+      </div>
+
+      <div class="portfolio-card" data-category="mobile">
+       <div class="portfolio-media">
+        📱 
+        <div class="play-btn">
+         ▶
+        </div>
+       </div>
+
+       <div class="portfolio-info">
+        <h3 class="portfolio-title">App de Delivery</h3>
+        <div class="portfolio-tech"><span class="tech-tag">React Native</span> <span class="tech-tag">Firebase</span>
+        </div>
+        <p>Aplicativo de entrega com rastreamento em tempo real</p>
+       </div>
+
+      </div>
+
+      <div class="portfolio-card" data-category="design">
+       <div class="portfolio-media">
+        🎨 
+        <div class="play-btn">
+         ▶
+        </div>
+
+       </div>
+       <div class="portfolio-info">
+        <h3 class="portfolio-title">Brand Identity</h3>
+        <div class="portfolio-tech"><span class="tech-tag">Figma</span> <span class="tech-tag">Adobe</span>
+        </div>
+        <p>Identidade visual completa para startup de tecnologia</p>
+       </div>
+
+      </div>
+
+      <div class="portfolio-card" data-category="web">
+       <div class="portfolio-media">
+        📊 
+        <div class="play-btn">
+         ▶
+        </div>
+       </div>
+
+       <div class="portfolio-info">
+        <h3 class="portfolio-title">Dashboard Analytics</h3>
+        <div class="portfolio-tech"><span class="tech-tag">Vue.js</span> <span class="tech-tag">D3.js</span>
+        </div>
+
+        <p>Painel de controle com gráficos interativos</p>
+       </div>
+      </div>
+      
+     </div>
+    </section>
+    
+    <!-- Seção Contato -->
+
+    <section class="section" id="contact">
+
+     <div class="services-header">
+      <h2>Vamos Trabalhar Juntos</h2>
+      <p>Entre em contato e vamos criar algo incrível</p>
+     </div>
+     <div class="contact-grid">
+      <div class="contact-info">
+       <div class="contact-card">
+        <div class="contact-icon">
+         📞
+        </div>
+        <div>
+         <h4>Telefone</h4>
+         <p id="phoneNumber">+258 84 123 4567</p>
+        </div>
+       </div>
+       <div class="contact-card">
+        <div class="contact-icon">
+         📧
+        </div>
+        <div>
+         <h4>Email</h4>
+         <p id="emailAddress">rodrigues@dev.com</p>
+        </div>
+       </div>
+       <div class="contact-card">
+        <div class="contact-icon">
+         📍
+        </div>
+        <div>
+         <h4>Localização</h4>
+         <p id="locationText">Maputo, Moçambique</p>
+        </div>
+       </div>
+      </div>
+
+      <div class="feedback-section">
+
+       <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Deixe seu Feedback</h3>
+
+       <form class="feedback-form" id="feedbackForm">
+        <div class="form-group"><label for="clientName">Seu Nome</label> <input type="text" id="clientName" name="clientName" required>
+        </div>
+
+        <div class="form-group"><label for="clientEmail">Seu Email</label> <input type="email" id="clientEmail" name="clientEmail" required>
+        </div>
+
+        <div class="form-group"><label for="projectType">Tipo de Projeto</label> <select id="projectType" name="projectType" required> <option value="">Selecione...</option> <option value="website">Website</option> <option value="app">Aplicativo Mobile</option> <option value="design">Design UI/UX</option> <option value="ecommerce">E-commerce</option> <option value="other">Outro</option> </select>
+        </div>
+
+        <div class="form-group"><label>Avaliação do Portfólio</label>
+         <div class="rating-container"><span class="star" data-rating="1">★</span> <span class="star" data-rating="2">★</span> <span class="star" data-rating="3">★</span> <span class="star" data-rating="4">★</span> <span class="star" data-rating="5">★</span> <span id="ratingText">Clique para avaliar</span>
+         </div>
+        </div>
+
+        <div class="form-group"><label for="feedback">Sua Mensagem/Feedback</label> <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary"> <span>Enviar Feedback</span> </button>
+
+       </form>
+
+      </div>
+     </div>
+    </section>
+
+   </main>
+  </div>
+
+  <!-- Modais para Galeria -->
+
+  <div class="modal" id="modal1">
+   <div class="modal-content"><button class="modal-close" onclick="closeModal('modal1')">×</button>
+    <h2>Desenvolvimento Web</h2>
+    <p>Aqui você pode ver exemplos detalhados dos meus projetos de desenvolvimento web...</p>
+   </div>
+  </div>
+
+  <div class="modal" id="modal2">
+   <div class="modal-content"><button class="modal-close" onclick="closeModal('modal2')">×</button>
+    <h2>Design UI/UX</h2>
+    <p>Confira meus trabalhos de design de interface e experiência do usuário...</p>
+   </div>
+  </div>
+
+  <div class="modal" id="modal3">
+   <div class="modal-content"><button class="modal-close" onclick="closeModal('modal3')">×</button>
+    <h2>Apps Mobile</h2>
+    <p>Veja os aplicativos mobile que desenvolvi...</p>
+   </div>
+  </div>
+
+  <div class="modal" id="modal4">
+   <div class="modal-content"><button class="modal-close" onclick="closeModal('modal4')">×</button>
+    <h2>E-commerce</h2>
+    <p>Projetos de lojas virtuais e sistemas de e-commerce...</p>
+   </div>
+  </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
